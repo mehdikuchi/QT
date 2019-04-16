@@ -1,0 +1,1 @@
+The sources of QT app for the guessing number game
