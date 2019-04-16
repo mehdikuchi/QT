@@ -1,0 +1,1 @@
+The repository contains some sample QT applications from so simple codes to more advanced using other libraries such as openCV.
