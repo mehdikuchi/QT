@@ -27,7 +27,7 @@
      <widget class="QSpinBox" name="spinBox"/>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="checkButton">
       <property name="font">
        <font>
         <family>B Nazanin</family>

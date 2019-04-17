@@ -19,7 +19,8 @@ Widget::~Widget()
     delete ui;
 }
 
-void Widget::on_pushButton_clicked()
+
+void Widget::on_checkButton_clicked()
 {
     if(ui->spinBox->text().toInt() == this->number){
 
