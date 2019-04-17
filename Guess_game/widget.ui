@@ -40,7 +40,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="retryButton">
       <property name="font">
        <font>
         <family>B Nazanin</family>

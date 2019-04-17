@@ -29,7 +29,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QSpinBox *spinBox;
     QPushButton *checkButton;
-    QPushButton *pushButton_2;
+    QPushButton *retryButton;
     QLabel *label;
     QLabel *resultLabel;
 
@@ -60,16 +60,16 @@ public:
 
         horizontalLayout->addWidget(checkButton);
 
-        pushButton_2 = new QPushButton(horizontalLayoutWidget);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        retryButton = new QPushButton(horizontalLayoutWidget);
+        retryButton->setObjectName(QStringLiteral("retryButton"));
         QFont font1;
         font1.setFamily(QStringLiteral("B Nazanin"));
         font1.setPointSize(10);
         font1.setBold(true);
         font1.setWeight(75);
-        pushButton_2->setFont(font1);
+        retryButton->setFont(font1);
 
-        horizontalLayout->addWidget(pushButton_2);
+        horizontalLayout->addWidget(retryButton);
 
         label = new QLabel(Widget);
         label->setObjectName(QStringLiteral("label"));
@@ -95,7 +95,7 @@ public:
     {
         Widget->setWindowTitle(QApplication::translate("Widget", "Widget", nullptr));
         checkButton->setText(QApplication::translate("Widget", "\332\206\332\251 \332\251\331\206 ", nullptr));
-        pushButton_2->setText(QApplication::translate("Widget", "\331\205\330\254\330\257\330\257", nullptr));
+        retryButton->setText(QApplication::translate("Widget", "\331\205\330\254\330\257\330\257", nullptr));
         label->setText(QApplication::translate("Widget", "\330\247\332\257\331\207 \331\205\333\214\330\252\331\210\331\206\333\214 \330\271\330\257\330\257 \330\265\330\255\333\214\330\255 \330\261\331\210 \330\250\332\251\331\210", nullptr));
         resultLabel->setText(QApplication::translate("Widget", "\331\205\330\254\330\257\330\257 \330\263\330\271\333\214 \332\251\331\206", nullptr));
     } // retranslateUi

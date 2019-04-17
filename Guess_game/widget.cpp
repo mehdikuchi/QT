@@ -28,3 +28,12 @@ void Widget::on_checkButton_clicked()
         ui->resultLabel->setText("برنده شدی بره کلا");
     }
 }
+
+void Widget::on_retryButton_clicked()
+{
+    ui->resultLabel->setText("دوباره سعی کن");
+    ui->spinBox->setValue(0);
+    srand(time(0));
+    this->number = rand()%10;
+    qDebug()<<this->number;
+}

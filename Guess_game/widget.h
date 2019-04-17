@@ -20,6 +20,8 @@ private slots:
 
     void on_checkButton_clicked();
 
+    void on_retryButton_clicked();
+
 private:
     Ui::Widget *ui;
     int number;
