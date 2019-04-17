@@ -80,9 +80,9 @@ public:
         label->setFont(font2);
         resultLabel = new QLabel(Widget);
         resultLabel->setObjectName(QStringLiteral("resultLabel"));
-        resultLabel->setGeometry(QRect(160, 120, 131, 21));
+        resultLabel->setGeometry(QRect(130, 110, 231, 41));
         QFont font3;
-        font3.setFamily(QStringLiteral("B Homa"));
+        font3.setFamily(QStringLiteral("B Nazanin"));
         font3.setPointSize(14);
         resultLabel->setFont(font3);
 

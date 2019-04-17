@@ -11,6 +11,7 @@ Widget::Widget(QWidget *parent) :
     srand(time(0));
     this->number = rand()%10;
     qDebug()<<this->number;
+    ui->resultLabel->setText("یک عدد انتخب و شانستو امتحان کن");
 
 }
 
@@ -27,11 +28,14 @@ void Widget::on_checkButton_clicked()
         qDebug()<<"well done";
         ui->resultLabel->setText("برنده شدی بره کلا");
     }
+    else {
+        ui->resultLabel->setText("اووپس موفق نشدی دوباره امتحان کن");
+    }
 }
 
 void Widget::on_retryButton_clicked()
 {
-    ui->resultLabel->setText("دوباره سعی کن");
+    ui->resultLabel->setText("یک عدد انتخاب و امتحان کن ");
     ui->spinBox->setValue(0);
     srand(time(0));
     this->number = rand()%10;
